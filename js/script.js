@@ -354,7 +354,7 @@ validation.addField('#name', [
   {
     //Только буквы
     rule: 'customRegexp',
-    value: /^([a-zа-яё]+|\d+)$/i,
+    value: /^[a-zа-яё]+$/i,
     errorMessage: 'Недопустимый формат',
   },
 ]);
