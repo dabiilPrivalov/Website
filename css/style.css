@@ -251,83 +251,83 @@ html {
 }
 
 .hero__dropdown-list__src1 {
-  background: url(img/srcmenu_1.jpg) no-repeat;
+  background: url(/img/srcmenu_1.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src2 {
-  background: url(img/srcmenu_2.jpg) no-repeat;
+  background: url(/img/srcmenu_2.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src3 {
-  background: url(img/srcmenu_3.jpg) no-repeat;
+  background: url(/img/srcmenu_3.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src4 {
-  background: url(img/srcmenu_4.jpg) no-repeat;
+  background: url(/img/srcmenu_4.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src5 {
-  background: url(img/srcmenu_5.jpg) no-repeat;
+  background: url(/img/srcmenu_5.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src6 {
-  background: url(img/srcmenu_6.jpg) no-repeat;
+  background: url(/img/srcmenu_6.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src7 {
-  background: url(img/srcmenu_7.jpg) no-repeat;
+  background: url(/img/srcmenu_7.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src8 {
-  background: url(img/srcmenu_8.jpg) no-repeat;
+  background: url(/img/srcmenu_8.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src9 {
-  background: url(img/srcmenu_9.jpg) no-repeat;
+  background: url(/img/srcmenu_9.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src10 {
-  background: url(img/srcmenu_10.jpg) no-repeat;
+  background: url(/img/srcmenu_10.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src11 {
-  background: url(img/srcmenu_11.jpg) no-repeat;
+  background: url(/img/srcmenu_11.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src12 {
-  background: url(img/srcmenu_12.jpg) no-repeat;
+  background: url(/img/srcmenu_12.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src13 {
-  background: url(img/srcmenu_13.jpg) no-repeat;
+  background: url(/img/srcmenu_13.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src14 {
-  background: url(img/srcmenu_14.jpg) no-repeat;
+  background: url(/img/srcmenu_14.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src15 {
-  background: url(img/srcmenu_15.jpg) no-repeat;
+  background: url(/img/srcmenu_15.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src16 {
-  background: url(img/srcmenu_16.jpg) no-repeat;
+  background: url(/img/srcmenu_16.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src17 {
-  background: url(img/srcmenu_17.jpg) no-repeat;
+  background: url(/img/srcmenu_17.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src18 {
-  background: url(img/srcmenu_18.jpg) no-repeat;
+  background: url(/img/srcmenu_18.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src19 {
-  background: url(img/srcmenu_19.jpg) no-repeat;
+  background: url(/img/srcmenu_19.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src20 {
-  background: url(img/srcmenu_20.jpg) no-repeat;
+  background: url(/img/srcmenu_20.jpg) no-repeat;
 }
 
 .hero__dropdown-list__src:hover:not(:focus-visible) {
@@ -608,7 +608,7 @@ html {
 }
 
 .gallery {
-  background: url(img/gallery_back.jpg);
+  background: url(../img/gallery_back.jpg);
   color: #FFFFFF;
   padding: 80px 0;
 }
@@ -690,7 +690,7 @@ html {
 
 .gallery__check-customize::after {
   content: '';
-  background-image: url(img/checkbox_pin.svg);
+  background-image: url(/img/checkbox_pin.svg);
   position: absolute;
   left: 5px;
   top: 15px;
@@ -870,7 +870,7 @@ html {
   width: 10px;
   border: 1px solid transparent;
   border-color: transparent;
-  background: url(img/Rectangle\ 54.svg) no-repeat;
+  background: url(../img/Rectangle\ 54.svg) no-repeat;
   right: 11.5px;
   top: 50%;
   margin-top: -2.5px;
@@ -1006,7 +1006,7 @@ html {
   bottom: 25px;
   left: 25px;
   right: 25px;
-  background: url(img/preview.svg) no-repeat center center rgba(0, 0, 0, 0.5);
+  background: url(../img/preview.svg) no-repeat center center rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity .2s ease-in-out;
 }
@@ -1617,55 +1617,55 @@ html {
 }
 
 .project__swiper-slide__img_1 {
-  background-image: url(img/project_1_1920.jpg);
+  background-image: url(/img/project_1_1920.jpg);
   width: 244px;
   height: 63px;
 }
 
 .project__swiper-slide__img_2 {
-  background-image: url(img/project_2_1920.jpg);
+  background-image: url(/img/project_2_1920.jpg);
   width: 330px;
   height: 59px;
 }
 
 .project__swiper-slide__img_3 {
-  background-image: url(img/project_3_1920.jpg);
+  background-image: url(/img/project_3_1920.jpg);
   width: 229px;
   height: 54px;
 }
 
 .project__swiper-slide__img_4 {
-  background-image: url(img/project_4_1920.jpg);
+  background-image: url(/img/project_4_1920.jpg);
   width: 123px;
   height: 85px;
 }
 
 .project__swiper-slide__img_5 {
-  background-image: url(img/project_5_1920.jpg);
+  background-image: url(/img/project_5_1920.jpg);
   width: 173px;
   height: 85px;
 }
 
 .project__swiper-slide__img_6 {
-  background-image: url(img/project_6_1920.jpg);
+  background-image: url(/img/project_6_1920.jpg);
   width: 252px;
   height: 70px;
 }
 
 .project__swiper-slide__img_7 {
-  background-image: url(img/project_7_1920.jpg);
+  background-image: url(/img/project_7_1920.jpg);
   width: 286px;
   height: 69px;
 }
 
 .project__swiper-slide__img_8 {
-  background-image: url(img/project_8_1920.jpg);
+  background-image: url(/img/project_8_1920.jpg);
   width: 185px;
   height: 81px;
 }
 
 .project__swiper-slide__img_9 {
-  background-image: url(img/project_9_1920.jpg);
+  background-image: url(/img/project_9_1920.jpg);
   width: 229px;
   height: 62px;
 }
@@ -1680,47 +1680,47 @@ html {
 
 .project__swiper-slide_1:hover:not(:focus-visible) .project__swiper-slide__img_1,
 .project__swiper-slide_1:active .project__swiper-slide__img_1 {
-  background-image: url(img/project_1_1920_hover.jpg);
+  background-image: url(/img/project_1_1920_hover.jpg);
 }
 
 .project__swiper-slide_2:hover:not(:focus-visible) .project__swiper-slide__img_2,
 .project__swiper-slide_2:active .project__swiper-slide__img_2 {
-  background-image: url(img/project_2_1920_hover.jpg);
+  background-image: url(/img/project_2_1920_hover.jpg);
 }
 
 .project__swiper-slide_3:hover:not(:focus-visible) .project__swiper-slide__img_3,
 .project__swiper-slide_3:active .project__swiper-slide__img_3 {
-  background-image: url(img/project_3_1920_hover.jpg);
+  background-image: url(/img/project_3_1920_hover.jpg);
 }
 
 .project__swiper-slide_4:hover:not(:focus-visible) .project__swiper-slide__img_4,
 .project__swiper-slide_4:active .project__swiper-slide__img_4 {
-  background-image: url(img/project_4_1920_hover.jpg);
+  background-image: url(/img/project_4_1920_hover.jpg);
 }
 
 .project__swiper-slide_5:hover:not(:focus-visible) .project__swiper-slide__img_5,
 .project__swiper-slide_5:active .project__swiper-slide__img_5 {
-  background-image: url(img/project_5_1920_hover.jpg);
+  background-image: url(/img/project_5_1920_hover.jpg);
 }
 
 .project__swiper-slide_6:hover:not(:focus-visible) .project__swiper-slide__img_6,
 .project__swiper-slide_6:active .project__swiper-slide__img_6 {
-  background-image: url(img/project_6_1920_hover.jpg);
+  background-image: url(/img/project_6_1920_hover.jpg);
 }
 
 .project__swiper-slide_7:hover:not(:focus-visible) .project__swiper-slide__img_7,
 .project__swiper-slide_7:active .project__swiper-slide__img_7 {
-  background-image: url(img/project_7_1920_hover.jpg);
+  background-image: url(/img/project_7_1920_hover.jpg);
 }
 
 .project__swiper-slide_8:hover:not(:focus-visible) .project__swiper-slide__img_8,
 .project__swiper-slide_8:active .project__swiper-slide__img_8 {
-  background-image: url(img/project_8_1920_hover.jpg);
+  background-image: url(/img/project_8_1920_hover.jpg);
 }
 
 .project__swiper-slide_9:hover:not(:focus-visible) .project__swiper-slide__img_9,
 .project__swiper-slide_9:active .project__swiper-slide__img_9 {
-  background-image: url(img/project_9_1920_hover.jpg);
+  background-image: url(/img/project_9_1920_hover.jpg);
 }
 
 .contacts {
@@ -1952,7 +1952,7 @@ html {
 
 .img {
   display: inline-block;
-  background-image: url(img/project_3_1920_hover.jpg);
+  background-image: url(/img/project_3_1920_hover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
