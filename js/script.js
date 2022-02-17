@@ -377,7 +377,7 @@ validation.addField('#tel', [
 ])
 .onSuccess((event) => {
 
-  alert('Заявка отправлена');
+  
   let formData = new FormData(event.target);
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {

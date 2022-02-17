@@ -1,12 +1,12 @@
 <?
 require_once 'PHPMailer/PHPMailerAutoload.php';
 
-// $admin_email = array();
-// foreach ( $_POST["admin_email"] as $key => $value ) {
-// 	array_push($admin_email, $value);
-// }
+$admin_email = array();
+foreach ( $_POST["admin_email"] as $key => $value ) {
+	array_push($admin_email, $value);
+}
 
-$admin_email = 'insolsound@gmail.com';
+// $admin_email = 'insolsound@gmail.com';
 
 $form_subject = trim($_POST["form_subject"]);
 
