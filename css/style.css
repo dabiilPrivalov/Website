@@ -156,15 +156,15 @@ html {
 
 
 .hero__background-main_1 {
-  background-image: url(img/hero_1.png);
+  background-image: url(../img/hero_1.png);
 }
 
 .hero__background-main_2 {
-  background-image: url(img/hero_2.png);
+  background-image: url(../img/hero_2.png);
 }
 
 .hero__background-main_3 {
-  background-image: url(img/hero_3.png);
+  background-image: url(../img/hero_3.png);
 }
 
 .description {
