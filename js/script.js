@@ -420,7 +420,7 @@ function init(){
     // Необходимо указать данный тип макета.
     iconLayout: 'default#image',
     // Своё изображение иконки метки.
-    iconImageHref: '/img/map_pin.svg',
+    iconImageHref: '../img/map_pin.svg',
     // Размеры метки.
     iconImageSize: [20, 20],
   });
