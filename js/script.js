@@ -377,8 +377,9 @@ validation.addField('#tel', [
 ])
 .onSuccess((event) => {
 
-  
+
   let formData = new FormData(event.target);
+  console.log(...formData);
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
