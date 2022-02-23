@@ -386,8 +386,7 @@ validation.addField('#tel', [
       }
     }
   }
-  xhr.open('GET', 'mail.php'+
-  "name="+name+"&id="+id+"&phone="+phone+"&email="+email+"&img="+img);
+  xhr.open('POST', 'mail.php', true);
   xhr.send(formData);
 
   // alert('успешно отправлено')
