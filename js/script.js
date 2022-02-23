@@ -376,39 +376,20 @@ validation.addField('#tel', [
   },
 ])
 .onSuccess((event) => {
-  // alert('успешно отправлено')
-
-  // let formData = new FormData(event.target);
-  // console.log(...formData);
-  // let xhr = new XMLHttpRequest();
-  // xhr.onreadystatechange = function() {
-  //   if (xhr.readyState === 4) {
-  //     if (xhr.status === 200) {
-  //       alert('Заявка отправлена');
-  //     }
-  //   }
-  // }
-  // xhr.open('POST', 'mail.php', true);
-  // xhr.send(formData);
-  const form = document.getElementById('form');
-  form.addEventListener('submit', formSend);
-  async function formSend(e) {
-    e.preventDefault();
-    let formData = new FormData(form);
-    let response = await fetch('sendmail.php', {
-      method: 'POST',
-      body: formData
-    });
-    if (response.ok) {
-      let result = await response.json();
-      alert('Otpravleno');
-      formPreview.innerHTML = '';
-      form.reset();
-    } else {
-      alert('Oshibka');
+  let formData = new FormData(event.target);
+  console.log(...formData);
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        alert('Заявка отправлена');
+      }
     }
   }
+  xhr.open('POST', 'mail.php', true);
+  xhr.send(formData);
 
+  // alert('успешно отправлено')
 });
 
 // document.addEventListener('DomContentLoaded', function() {
@@ -430,7 +411,6 @@ validation.addField('#tel', [
 //       alert('Oshibka');
 //     }
 //   }
-
 // });
 
 //Маска телефона
