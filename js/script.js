@@ -374,9 +374,9 @@ validation.addField('#tel', [
     },
     errorMessage: 'Мало цифр',
   },
-]);
-// .onSuccess((event) => {
-//   alert('успешно отправлено')
+])
+.onSuccess((event) => {
+  // alert('успешно отправлено')
 
   // let formData = new FormData(event.target);
   // console.log(...formData);
@@ -390,10 +390,6 @@ validation.addField('#tel', [
   // }
   // xhr.open('POST', 'mail.php', true);
   // xhr.send(formData);
-
-// });
-
-document.addEventListener('DomContentLoaded', function() {
   const form = document.getElementById('form');
   form.addEventListener('submit', formSend);
   async function formSend(e) {
@@ -414,6 +410,28 @@ document.addEventListener('DomContentLoaded', function() {
   }
 
 });
+
+// document.addEventListener('DomContentLoaded', function() {
+//   const form = document.getElementById('form');
+//   form.addEventListener('submit', formSend);
+//   async function formSend(e) {
+//     e.preventDefault();
+//     let formData = new FormData(form);
+//     let response = await fetch('sendmail.php', {
+//       method: 'POST',
+//       body: formData
+//     });
+//     if (response.ok) {
+//       let result = await response.json();
+//       alert('Otpravleno');
+//       formPreview.innerHTML = '';
+//       form.reset();
+//     } else {
+//       alert('Oshibka');
+//     }
+//   }
+
+// });
 
 //Маска телефона
 var selector = document.getElementById("tel");
