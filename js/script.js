@@ -369,28 +369,50 @@ validation.addField('#tel', [
   //Проверка количества цифр
   {
     validator: (name, value) => {
-            const phone = selector.inputmask.unmaskedvalue ()
-            return Number(phone) && phone.length === 10
-          },
-          errorMessage: 'Мало цифр',
-        },
-])
-.onSuccess((event) => {
+      const phone = selector.inputmask.unmaskedvalue ()
+      return Number(phone) && phone.length === 10
+    },
+    errorMessage: 'Мало цифр',
+  },
+]);
+// .onSuccess((event) => {
+//   alert('успешно отправлено')
 
+  // let formData = new FormData(event.target);
+  // console.log(...formData);
+  // let xhr = new XMLHttpRequest();
+  // xhr.onreadystatechange = function() {
+  //   if (xhr.readyState === 4) {
+  //     if (xhr.status === 200) {
+  //       alert('Заявка отправлена');
+  //     }
+  //   }
+  // }
+  // xhr.open('POST', 'mail.php', true);
+  // xhr.send(formData);
 
-  let formData = new FormData(event.target);
-  console.log(...formData);
-  let xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        alert('Заявка отправлена');
-      }
+// });
+
+document.addEventListener('DomContentLoaded', function() {
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend);
+  async function formSend(e) {
+    e.preventDefault();
+    let formData = new FormData(form);
+    let response = await fetch('sendmail.php', {
+      method: 'POST',
+      body: formData
+    });
+    if (response.ok) {
+      let result = await response.json();
+      alert('Otpravleno');
+      formPreview.innerHTML = '';
+      form.reset();
+    } else {
+      alert('Oshibka');
     }
   }
-  xhr.open('POST', 'mail.php', true);
-  xhr.send(formData);
-  event.target.reset();
+
 });
 
 //Маска телефона
