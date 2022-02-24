@@ -388,7 +388,7 @@ validation.addField('#tel', [
   }
   xhr.open('POST', 'mail.php', true);
   xhr.send(formData);
-
+  confirm('Заявка отправлена');
 });
 
 //Маска телефона
