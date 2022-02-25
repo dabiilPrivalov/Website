@@ -374,22 +374,24 @@ validation.addField('#tel', [
     },
     errorMessage: 'Мало цифр',
   },
+
 ])
-.onSuccess((event) => {
-  let formData = new FormData(event.target);
-  // console.log(...formData);
-  let xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        alert('Заявка отправлена');
-      }
-    }
-  }
-  xhr.open('POST', 'mail.php', true);
-  xhr.send(formData);
-  confirm('Заявка отправлена');
-});
+
+
+// .onSuccess((event) => {
+
+//   let formData = new FormData(event.target);
+//   let xhr = new XMLHttpRequest();
+//   xhr.onreadystatechange = function() {
+//     if (xhr.readyState === 4) {
+//       if (xhr.status === 200) {
+//         alert('Заявка отправлена');
+//       }
+//     }
+//   }
+//   xhr.open('POST', 'mail.php', true);
+//   xhr.send(formData);
+// });
 
 //Маска телефона
 var selector = document.getElementById("tel");
