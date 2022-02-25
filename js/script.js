@@ -378,17 +378,17 @@ validation.addField('#tel', [
 ])
 .onSuccess((event) => {
 
-  // let formData = new FormData(event.target);
-  // let xhr = new XMLHttpRequest();
-  // xhr.onreadystatechange = function() {
-  //   if (xhr.readyState === 4) {
-  //     if (xhr.status === 200) {
-  //       alert('Заявка отправлена');
-  //     }
-  //   }
-  // }
-  // xhr.open('POST', 'mail.php', true);
-  // xhr.send(formData);
+  let formData = new FormData(event.target);
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        alert('Заявка отправлена');
+      }
+    }
+  }
+  xhr.open('POST', 'mail.php', true);
+  xhr.send(formData);
 });
 
 //Маска телефона
