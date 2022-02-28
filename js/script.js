@@ -361,7 +361,6 @@ validation.addField('#name', [
 
 //валидация телефона
 validation.addField('#tel', [
-
   {
     rule: 'required',
     errorMessage: 'Поле обязательно',
@@ -377,37 +376,20 @@ validation.addField('#tel', [
   },
 ])
 .onSuccess((event) => {
-
-  // let formData = new FormData(event.target);
-  // let xhr = new XMLHttpRequest();
-  // xhr.onreadystatechange = function() {
-  //   if (xhr.readyState === 4) {
-  //     if (xhr.status === 200) {
-  //       alert('Заявка отправлена');
-  //     }
-  //   }
-  // }
-  // xhr.open('POST', 'mail.php', true);
-  // xhr.send(formData);
+  let formData = new FormData(event.target);
+  // console.log(...formData);
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        alert('Заявка отправлена');
+      }
+    }
+  }
+  xhr.open('POST', 'mail.php', true);
+  xhr.send(formData);
 
 });
-
-var invalidClassName = 'just-validate-error-field'
-var inputs = document.querySelectorAll('input, select, textarea')
-inputs.forEach(function (input) {
-  // Add a css class on submit when the input is invalid.
-  input.addEventListener('just-validate-error-field', function () {
-    input.classList.add(invalidClassName)
-  })
-
-  // Remove the class when the input becomes valid.
-  // 'input' will fire each time the user types
-  input.addEventListener('input', function () {
-    if (input.validity.valid) {
-      input.classList.remove(invalidClassName)
-    }
-  })
-})
 
 //Маска телефона
 var selector = document.getElementById("tel");

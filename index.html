@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   <link rel="stylesheet" href="css/style.css">
 
   <script defer src="libs/graph-modal.min.js"></script>
@@ -26,7 +25,6 @@
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-  <script defer src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -1332,16 +1330,15 @@
             Леонтьевский переулок, дом 5/1
           </address>
         </div>
-        <form class="contacts__top__form pageclip-form" action="https://send.pageclip.co/WhpRZ8DcmqhTni0rVNThg9UmoA9GRpdX" method="POST" id="form">
+        <form class="contacts__top__form" action="mail.php" method="POST" id="form">
           <label class="input-container">
             <input class="input-container__field contacts__top__form__name" type="text" name="name" placeholder="Имя*" id="name" aria-label="Введи Имя">
           </label>
           <label class="input-container">
             <input class="input-container__field contacts__top__form__tel" type="tel" name="tel" placeholder="Телефон*" id="tel" aria-label="Введи Телефон">
           </label>
-
-          <button class="contacts__top__form__button contacts__top__form__button_desc border-focus pageclip-form__submit" type="submit" value="Заказать обратный звонок" id="submit-btn">Заказать обратный звонок</button>
-          <button class="contacts__top__form__button contacts__top__form__button_mobile pageclip-form__submit" type="submit" value="Заказать" id="submit-btn_mobile">Заказать</button>
+          <button class="contacts__top__form__button contacts__top__form__button_desc border-focus" type="submit" value="Заказать обратный звонок" id="submit-btn">Заказать обратный звонок</button>
+          <button class="contacts__top__form__button contacts__top__form__button_mobile" type="submit" value="Заказать" id="submit-btn_mobile">Заказать</button>
         </form>
         <div class="contacts__top__social">
           <h3 class="contacts__top__social__title middle-title">
@@ -1436,6 +1433,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
